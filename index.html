@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>TimeTour</title>
+        <link rel="stylesheet" href="style/desktop/style.css" media="only screen and (min-width:800px)" />
+        <link rel="stylesheet" href="style/tablet/style.css" media="only screen and (min-width:400px) and (max-width:800px)" />
+        <link rel="stylesheet" href="style/phone/style.css" media="screen and (max-width:400px)" />
+        <script src="script.js"></script>
+	</head>
+	<body id="autoslider">
+
+        <div class="header" id="header_theme">
+            <a href="index.html"><div class="logo"></div></a>
+            <div class="date" id="date"></div>
+            <div class="timer" id="timer"></div>
+            <div class="join" id="join">Join</div>
+            <div class="login" id="login" onclick="loginbutton()">Login</div>
+            <div class="search"><div class="search_img" id="search" onclick="searchbutton()"></div></div>
+        </div>
+
+        <div class="menu">
+        <div class="imgmenu" id="imgmenu">
+            <div class="arrow" id="arrow"></div>
+        </div>
+            <ul>
+                <span class="home"><a href="#submenu" id="home" onmouseover="ahome()" onclick="submenu(this)"><li>HOME</li></a></span>
+                <span class="tours"><a href="#submenu" id="tours" onmouseover="atours()" onclick="submenu(this)"><li>TOURS</li></a></span>
+                <span class="hotels"><a href="#submenu" id="hotels" onmouseover="ahotels()" onclick="submenu(this)"><li>HOTELS</li></a></span>
+                <span class="contacts"><a href="#submenu" id="contacts" onmouseover="acontacts()" onclick="submenu(this)"><li>CONTACTS</li></a></span>
+        </ul>
+        </div>
+
+    <div class="submenu" id="submenu">
+        <div class="bodysub" id="bodysub">
+           <div class="promo" id="promo">
+                <div class="prombut"><span>Carpathians. Hot offer.</span><a href="index.html">More...</a></div>
+            </div>
+            <div class="sb" id="sb">
+                <div class="subbutton sb1" id="subbutton1">
+                    <div class="subtext" id="subtext1">TEXT</div>
+                </div>
+                <div class="subbutton sb2" id="subbutton2">
+                    <div class="subtext" id="subtext2">TEXT</div>
+                </div>
+                <div class="subbutton sb3" id="subbutton3">
+                    <div class="subtext" id="subtext3">TEXT</div>
+                </div>
+                <div class="subbutton sb4" id="subbutton4">
+                    <div class="subtext" id="subtext4">TEXT</div>
+                </div>
+            </div>
+        </div>
+        <div class="headsub" id="headsub">
+            <div class="imgsub" id="imgsub"></div>
+            <div class="htext" id="htext"></div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="cpromo"><h2>WELCOME</h2><br /><span id="welcome">Lorem ipsum dolor sit amet, ex veniam quaeque lobortis usu,
+                                                      <br />ei mel assum sapientem complectitur. Cu pri meis vocent accusam.
+                                                      <br />Mel cu eius voluptaria, qui duis erat recusabo at. Quo no choro
+                                                      <br />possim mandamus, te est mollis ocurreret. Eum ne quis senserit,
+                                                      <br />te modo saepe utinam sit.</span></div>
+    </div>
+    <div class="searchblock" id="searchblock">
+        <input type="search" /><input type="submit" value="OK" class="bsearch"/>
+    </div>
+    <div class="loginblock" id="loginblock">
+    <table>
+        <tr>
+            <td><span id="loginblock1">Login:</span></td><td><input type="text" /></td>
+        </tr>
+        <tr>
+            <td><span id="loginblock2">Password:</span></td><td><input type="text" /></td>
+        </tr>
+    </table>
+        <a href="index.html" id="loginblock3">Forgot password?</a><input type="submit" value="LOGIN" class="loginbut"/>
+    </div>
+    <div class="social">
+        <a href="http://facebook.com" class="sblock fac"></a>
+        <a href="http://twitter.com" class="sblock twi"></a>
+        <a href="http://plus.google.com" class="sblock gpus"></a>
+        <a href="http://youtube.com" class="sblock ytub"></a>
+    </div>
+
+
+    <div class="slider">
+        <div class="sliderbutton slider1" id="slider1" onclick="sliderfun(this)"></div>
+        <div class="sliderbutton slider2" id="slider2" onclick="sliderfun(this)"></div>
+        <div class="sliderbutton slider3" id="slider3" onclick="sliderfun(this)"></div>
+        <div class="sliderbutton slider4" id="slider4" onclick="sliderfun(this)"></div>
+        <div class="sliderbutton slider5" id="slider5" onclick="sliderfun(this)"></div>
+        <div class="sliderbutton slider6" id="slider6" onclick="sliderfun(this)"></div>
+    </div>
+    <div class="footer"><span>Design by Gumenyuk, 2016</span></div>
+
+	</body>
+</html>
